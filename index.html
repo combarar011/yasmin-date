@@ -12,24 +12,29 @@
 <style>
 
 *{
-    box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
 
 body{
 
-    margin:0;
-    min-height:100vh;
+margin:0;
 
-    background:
-    linear-gradient(135deg,#f8f1ff,#eadcff,#ddd6fe);
+min-height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+background:linear-gradient(
+135deg,
+#f8f1ff,
+#eadcff,
+#ddd6fe
+);
 
-    overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
 
 }
 
@@ -37,22 +42,22 @@ body{
 
 .card{
 
-    width:90%;
-    max-width:430px;
+width:90%;
+max-width:430px;
 
-    background:rgba(255,255,255,.88);
+background:rgba(255,255,255,.88);
 
-    backdrop-filter:blur(15px);
+backdrop-filter:blur(15px);
 
-    padding:35px 25px;
+padding:35px 25px;
 
-    border-radius:35px;
+border-radius:35px;
 
-    text-align:center;
+text-align:center;
 
-    box-shadow:0 20px 60px rgba(124,58,237,.25);
+box-shadow:0 20px 60px rgba(124,58,237,.25);
 
-    animation:open .6s ease;
+animation:open .6s ease;
 
 }
 
@@ -60,19 +65,19 @@ body{
 
 @keyframes open{
 
-    from{
+from{
 
-        opacity:0;
-        transform:scale(.8);
+opacity:0;
+transform:scale(.8);
 
-    }
+}
 
-    to{
+to{
 
-        opacity:1;
-        transform:scale(1);
+opacity:1;
+transform:scale(1);
 
-    }
+}
 
 }
 
@@ -80,7 +85,7 @@ body{
 
 .close{
 
-    animation:close .4s forwards;
+animation:close .4s forwards;
 
 }
 
@@ -88,20 +93,21 @@ body{
 
 @keyframes close{
 
-    to{
+to{
 
-        opacity:0;
-        transform:scale(.8);
+opacity:0;
+transform:scale(.8);
 
-    }
+}
 
 }
 
 
 
+
 .hidden{
 
-    display:none;
+display:none;
 
 }
 
@@ -110,9 +116,9 @@ body{
 
 .unicorn{
 
-    font-size:85px;
+font-size:85px;
 
-    animation:float 3s infinite ease-in-out;
+animation:float 3s infinite ease-in-out;
 
 }
 
@@ -120,35 +126,33 @@ body{
 
 @keyframes float{
 
-    50%{
+50%{
 
-        transform:translateY(-18px);
-
-    }
+transform:translateY(-18px);
 
 }
 
+}
 
 
 
 h1{
 
-    color:#7c3aed;
+color:#7c3aed;
 
-    font-size:30px;
+font-size:30px;
 
-    font-weight:800;
+font-weight:800;
 
-    line-height:1.4;
+line-height:1.4;
 
 }
 
 
 
-
 .main-question{
 
-    font-size:32px;
+font-size:32px;
 
 }
 
@@ -156,21 +160,21 @@ h1{
 
 button{
 
-    border:0;
+border:0;
 
-    padding:14px 35px;
+padding:14px 35px;
 
-    border-radius:50px;
+border-radius:50px;
 
-    font-size:18px;
+font-size:18px;
 
-    font-weight:bold;
+font-weight:bold;
 
-    cursor:pointer;
+cursor:pointer;
 
-    margin:10px;
+margin:10px;
 
-    transition:.3s;
+transition:.3s;
 
 }
 
@@ -178,7 +182,7 @@ button{
 
 button:hover{
 
-    transform:scale(1.08);
+transform:scale(1.08);
 
 }
 
@@ -186,9 +190,9 @@ button:hover{
 
 .yes{
 
-    background:#ec4899;
+background:#ec4899;
 
-    color:white;
+color:white;
 
 }
 
@@ -196,9 +200,9 @@ button:hover{
 
 .no{
 
-    background:#f1f5f9;
+background:#f1f5f9;
 
-    color:#64748b;
+color:#64748b;
 
 }
 
@@ -206,13 +210,13 @@ button:hover{
 
 .buttons{
 
-    display:flex;
+display:flex;
 
-    justify-content:center;
+justify-content:center;
 
-    align-items:center;
+height:80px;
 
-    height:80px;
+align-items:center;
 
 }
 
@@ -220,19 +224,19 @@ button:hover{
 
 .option{
 
-    background:#f5f3ff;
+background:#f5f3ff;
 
-    padding:16px;
+padding:16px;
 
-    border-radius:22px;
+border-radius:22px;
 
-    margin:12px 0;
+margin:12px 0;
 
-    cursor:pointer;
+cursor:pointer;
 
-    font-size:18px;
+font-size:18px;
 
-    transition:.3s;
+transition:.3s;
 
 }
 
@@ -240,9 +244,9 @@ button:hover{
 
 .option:hover{
 
-    background:#ede9fe;
+background:#ede9fe;
 
-    transform:translateY(-5px);
+transform:translateY(-5px);
 
 }
 
@@ -250,15 +254,15 @@ button:hover{
 
 input{
 
-    padding:12px;
+padding:12px;
 
-    border-radius:15px;
+border-radius:15px;
 
-    border:1px solid #ddd;
+border:1px solid #ddd;
 
-    font-size:17px;
+font-size:17px;
 
-    margin:8px;
+margin:8px;
 
 }
 
@@ -602,7 +606,7 @@ oldPage.classList.add("close");
 
 
 
-setTimeout(function(){
+setTimeout(()=>{
 
 
 oldPage.classList.add("hidden");
@@ -639,37 +643,22 @@ let y = (Math.random()*80)-40;
 btn.style.transform =
 `translate(${x}px, ${y}px)`;
 
-
 }
-
-
-
-
-
 
 
 function choosePlace(place){
 
-
 answers.place = place;
 
-
 }
-
-
-
-
 
 
 
 function chooseFood(food){
 
-
 answers.food = food;
 
-
 }
-
 
 
 
@@ -683,9 +672,78 @@ answers.love = answer;
 
 
 
+let message = `
+
+💜 New Date Request 💜
+
+
+🦄 Answer:
+${answers.love}
+
+
+📅 Date:
+${document.getElementById("date").value}
+
+
+⏰ Time:
+${document.getElementById("time").value}
+
+
+📍 Place:
+${answers.place}
+
+
+🍽 Food:
+${answers.food}
+
+`;
+
+
+
+
+
+fetch("/api/send",{
+
+
+method:"POST",
+
+
+headers:{
+
+
+"Content-Type":"application/json"
+
+
+},
+
+
+body:JSON.stringify({
+
+
+message:message
+
+
+})
+
+
+});
+
+
+
+
+
+
 document.getElementById("result").innerHTML =
 
 `
+
+📅 ${document.getElementById("date").value}
+
+<br><br>
+
+⏰ ${document.getElementById("time").value}
+
+<br><br>
 
 📍 ${answers.place}
 
@@ -698,6 +756,7 @@ document.getElementById("result").innerHTML =
 🦄 ${answers.love}
 
 `;
+
 
 
 
@@ -714,4 +773,4 @@ nextPage(6,7);
 
 </body>
 
-</html>  
+</html>    
