@@ -200,3 +200,299 @@ font-size:16px;
 </style>
 </head>
 <body>
+<div class="card" id="page1">
+
+<div class="unicorn">🦄</div>
+
+<h1>
+Ahmed 🦄
+</h1>
+
+<p>
+Yasmin, will you go on a date with me? 💜
+</p>
+
+
+<div class="buttons">
+
+<button class="yes" onclick="nextPage(1,2)">
+YES 💖
+</button>
+
+<button class="no" id="no1" onmouseover="runNo('no1')">
+NO 😈
+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="card hidden" id="page2">
+
+<div class="unicorn">🦄✨</div>
+
+<h1>
+WAIT YOU ACTUALLY SAID YES?? 😭💜
+</h1>
+
+<p>
+Choose our date
+</p>
+
+<input type="date" id="date">
+
+<br>
+
+<input type="time" id="time">
+
+
+<br>
+
+<button class="yes" onclick="nextPage(2,3)">
+Next 💜
+</button>
+
+</div>
+
+
+
+
+<div class="card hidden" id="page3">
+
+<div class="unicorn">
+📍
+</div>
+
+<h1>
+Where should we go?
+</h1>
+
+
+<div class="option" onclick="choosePlace('Maadi')">
+📍 Maadi
+</div>
+
+
+<div class="option" onclick="choosePlace('Downtown')">
+🏙️ Downtown
+</div>
+
+
+<div class="option" onclick="choosePlace('Zamalek')">
+🌴 Zamalek
+</div>
+
+
+<div class="option" onclick="choosePlace('Cinema')">
+🎬 Cinema
+</div>
+
+
+<button class="yes" onclick="nextPage(3,4)">
+Next 💜
+</button>
+
+
+</div>
+<div class="card hidden" id="page4">
+
+<div class="unicorn">
+🍽️
+</div>
+
+<h1>
+What are we eating? ✨
+</h1>
+
+
+<div class="option" onclick="chooseFood('Pizza')">
+🍕 Pizza
+</div>
+
+
+<div class="option" onclick="chooseFood('Sushi')">
+🍣 Sushi
+</div>
+
+
+<div class="option" onclick="chooseFood('Burger')">
+🍔 Burger
+</div>
+
+
+<div class="option" onclick="chooseFood('Chicken')">
+🍗 Chicken
+</div>
+
+
+<div class="option" onclick="chooseFood('Shawarma')">
+🥙 Shawarma
+</div>
+
+
+<div class="option" onclick="chooseFood('Kofta')">
+🥩 Kofta
+</div>
+
+
+<button class="yes" onclick="nextPage(4,5)">
+Next 💜
+</button>
+
+</div>
+
+
+
+
+<div class="card hidden" id="page5">
+
+
+<div class="unicorn">
+🦄💜
+</div>
+
+
+<h1>
+Do you love Ahmed? 🦄
+</h1>
+
+
+<div class="buttons">
+
+
+<button class="yes" onclick="loveAnswer('Rawrr 🦖💜')">
+Rawrr 🦖
+</button>
+
+
+<button class="no" id="no2" onmouseover="runNo('no2')">
+No 😈
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card hidden" id="page6">
+
+
+<div class="unicorn">
+🦄✨
+</div>
+
+
+<h1>
+Date Confirmed 💜
+</h1>
+
+
+<p>
+Can't wait to see you Yasmin ✨
+</p>
+
+
+<p id="result">
+</p>
+
+
+</div>
+<script>
+
+let answers = {
+    place:"",
+    food:"",
+    love:"",
+};
+
+
+function nextPage(from,to){
+
+    let oldPage = document.getElementById("page"+from);
+    let newPage = document.getElementById("page"+to);
+
+
+    oldPage.classList.add("close");
+
+
+    setTimeout(()=>{
+
+        oldPage.classList.add("hidden");
+        oldPage.classList.remove("close");
+
+
+        newPage.classList.remove("hidden");
+
+
+    },400);
+
+}
+
+
+
+
+function runNo(id){
+
+    let btn=document.getElementById(id);
+
+    let x=(Math.random()*220)-110;
+    let y=(Math.random()*80)-40;
+
+
+    btn.style.transform=
+    `translate(${x}px,${y}px)`;
+
+}
+
+
+
+
+function choosePlace(place){
+
+    answers.place=place;
+
+}
+
+
+
+function chooseFood(food){
+
+    answers.food=food;
+
+}
+
+
+
+
+function loveAnswer(answer){
+
+    answers.love=answer;
+
+
+    document.getElementById("result").innerHTML=
+    `
+    📍 ${answers.place}<br><br>
+
+    🍽️ ${answers.food}<br><br>
+
+    🦄 ${answers.love}
+    `;
+
+
+    nextPage(5,6);
+
+}
+
+
+</script>
+
+
+</body>
+</html>    
