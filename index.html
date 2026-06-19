@@ -8,27 +8,28 @@
 
 <title>Rawrrr 🦄💜</title>
 
+
 <style>
 
 *{
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
 }
 
 
 body{
 
-margin:0;
-min-height:100vh;
+    margin:0;
+    min-height:100vh;
 
-background:
-linear-gradient(135deg,#f5edff,#e9d5ff,#ddd6fe);
+    background:
+    linear-gradient(135deg,#f8f1ff,#eadcff,#ddd6fe);
 
-display:flex;
-justify-content:center;
-align-items:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-overflow:hidden;
+    overflow:hidden;
 
 }
 
@@ -36,22 +37,22 @@ overflow:hidden;
 
 .card{
 
-width:90%;
-max-width:430px;
+    width:90%;
+    max-width:430px;
 
-background:rgba(255,255,255,.85);
+    background:rgba(255,255,255,.88);
 
-backdrop-filter:blur(15px);
+    backdrop-filter:blur(15px);
 
-padding:35px 25px;
+    padding:35px 25px;
 
-border-radius:35px;
+    border-radius:35px;
 
-text-align:center;
+    text-align:center;
 
-box-shadow:0 20px 60px #8b5cf655;
+    box-shadow:0 20px 60px rgba(124,58,237,.25);
 
-animation:open .6s ease;
+    animation:open .6s ease;
 
 }
 
@@ -59,19 +60,19 @@ animation:open .6s ease;
 
 @keyframes open{
 
-from{
+    from{
 
-opacity:0;
-transform:scale(.8);
+        opacity:0;
+        transform:scale(.8);
 
-}
+    }
 
-to{
+    to{
 
-opacity:1;
-transform:scale(1);
+        opacity:1;
+        transform:scale(1);
 
-}
+    }
 
 }
 
@@ -79,172 +80,20 @@ transform:scale(1);
 
 .close{
 
-animation:close .4s forwards;
+    animation:close .4s forwards;
 
 }
+
 
 
 @keyframes close{
 
-to{
+    to{
 
-opacity:0;
-transform:scale(.8);
+        opacity:0;
+        transform:scale(.8);
 
-}
-
-}
-
-
-
-.unicorn{
-
-font-size:80px;
-
-animation:float 3s infinite ease-in-out;
-
-}
-
-
-@keyframes float{
-
-50%{
-
-transform:translateY(-15px);
-
-}
-
-}
-
-
-
-h1{
-
-color:#7c3aed;
-
-font-size:30px;
-
-line-height:1.4;
-
-font-weight:800;
-
-}
-
-
-
-.main-question{
-
-font-size:30px;
-
-}
-
-
-
-button{
-
-border:0;
-
-padding:14px 35px;
-
-border-radius:50px;
-
-font-size:18px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-margin:10px;
-
-transition:.3s;
-
-}
-
-
-
-button:hover{
-
-transform:scale(1.08);
-
-}
-
-
-
-.yes{
-
-background:#f472b6;
-
-color:white;
-
-}
-
-
-
-.no{
-
-background:#f1f5f9;
-
-color:#64748b;
-
-}
-
-
-
-.buttons{
-
-display:flex;
-
-justify-content:center;
-
-position:relative;
-
-height:70px;
-
-}
-
-
-
-.option{
-
-background:#f5f3ff;
-
-padding:18px;
-
-border-radius:22px;
-
-margin:12px 0;
-
-cursor:pointer;
-
-transition:.3s;
-
-font-size:18px;
-
-}
-
-
-
-.option:hover{
-
-transform:translateY(-5px);
-
-background:#ede9fe;
-
-}
-
-
-
-input{
-
-padding:12px;
-
-border-radius:15px;
-
-border:1px solid #ddd;
-
-font-size:16px;
-
-margin:8px;
+    }
 
 }
 
@@ -252,17 +101,178 @@ margin:8px;
 
 .hidden{
 
-display:none;
+    display:none;
 
 }
 
 
+
+
+.unicorn{
+
+    font-size:85px;
+
+    animation:float 3s infinite ease-in-out;
+
+}
+
+
+
+@keyframes float{
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+
+
+
+h1{
+
+    color:#7c3aed;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    line-height:1.4;
+
+}
+
+
+
+
+.main-question{
+
+    font-size:32px;
+
+}
+
+
+
+button{
+
+    border:0;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin:10px;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.yes{
+
+    background:#ec4899;
+
+    color:white;
+
+}
+
+
+
+.no{
+
+    background:#f1f5f9;
+
+    color:#64748b;
+
+}
+
+
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:80px;
+
+}
+
+
+
+.option{
+
+    background:#f5f3ff;
+
+    padding:16px;
+
+    border-radius:22px;
+
+    margin:12px 0;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+
+
+.option:hover{
+
+    background:#ede9fe;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+input{
+
+    padding:12px;
+
+    border-radius:15px;
+
+    border:1px solid #ddd;
+
+    font-size:17px;
+
+    margin:8px;
+
+}
+
+
+
 </style>
+
 
 </head>
 
+
 <body>
 <div class="card" id="page1">
+
 
 <div class="unicorn">
 🦄
@@ -279,16 +289,20 @@ Yasmin, will you go on a date with me? 💜
 </h1>
 
 
+
 <div class="buttons">
+
 
 <button class="yes" onclick="nextPage(1,2)">
 YES 💖
 </button>
 
 
+
 <button class="no" id="no1" onmouseover="runNo('no1')">
 NO 😈
 </button>
+
 
 </div>
 
@@ -307,6 +321,7 @@ NO 😈
 </div>
 
 
+
 <h1>
 WAIT YOU ACTUALLY SAID YES?? 😭💜
 </h1>
@@ -317,12 +332,16 @@ I knew you would say yes 🥹
 </p>
 
 
+
 <button class="yes" onclick="nextPage(2,3)">
 OKAY 💜
 </button>
 
 
+
 </div>
+
+
 
 
 
@@ -336,14 +355,17 @@ OKAY 💜
 </div>
 
 
+
 <h1>
 Choose our date 💜
 </h1>
 
 
+
 <p>
 Pick the day and time
 </p>
+
 
 
 <input type="date" id="date">
@@ -355,12 +377,15 @@ Pick the day and time
 <input type="time" id="time">
 
 
+
 <br>
 
 
+
 <button class="yes" onclick="nextPage(3,4)">
-Next 💜
+NEXT 💜
 </button>
+
 
 
 </div>
@@ -377,9 +402,11 @@ Where should we go? 💜
 </h1>
 
 
+
 <div class="option" onclick="choosePlace('Maadi 📍')">
 📍 Maadi
 </div>
+
 
 
 <div class="option" onclick="choosePlace('Downtown 🏙️')">
@@ -387,9 +414,11 @@ Where should we go? 💜
 </div>
 
 
+
 <div class="option" onclick="choosePlace('Zamalek 🌴')">
 🌴 Zamalek
 </div>
+
 
 
 <div class="option" onclick="choosePlace('Cinema 🎬')">
@@ -399,11 +428,14 @@ Where should we go? 💜
 
 
 <button class="yes" onclick="nextPage(4,5)">
-Next 💜
+NEXT 💜
 </button>
 
 
+
 </div>
+
+
 
 
 
@@ -417,9 +449,11 @@ Next 💜
 </div>
 
 
+
 <h1>
 What are we eating? 💜
 </h1>
+
 
 
 
@@ -428,9 +462,11 @@ What are we eating? 💜
 </div>
 
 
+
 <div class="option" onclick="chooseFood('Sushi 🍣')">
 🍣 Sushi
 </div>
+
 
 
 <div class="option" onclick="chooseFood('Burger 🍔')">
@@ -438,14 +474,11 @@ What are we eating? 💜
 </div>
 
 
+
 <div class="option" onclick="chooseFood('Chicken 🍗')">
 🍗 Chicken
 </div>
 
-
-<div class="option" onclick="chooseFood('Shawarma 🥙')">
-🥙 Shawarma
-</div>
 
 
 <div class="option" onclick="chooseFood('Kofta 🥩')">
@@ -454,12 +487,22 @@ What are we eating? 💜
 
 
 
+<div class="option" onclick="chooseFood('Shawarma 🥙')">
+🥙 Shawarma
+</div>
+
+
+
+
 <button class="yes" onclick="nextPage(5,6)">
-Next 💜
+NEXT 💜
 </button>
 
 
+
 </div>
+
+
 
 
 
@@ -480,12 +523,14 @@ Do you love Ahmed? 🦄
 
 
 
+
 <div class="buttons">
 
 
 <button class="yes" onclick="loveAnswer('Rawrrr 🦖💜')">
 Rawrrr 🦖
 </button>
+
 
 
 
@@ -507,20 +552,25 @@ No 😈
 </div>
 
 
+
 <h1>
 Date Confirmed 💜
 </h1>
 
 
+
 <p>
-Can't wait to see you Yasmin ✨
+Can't wait to see you Yasmin 🥹💜
 </p>
+
 
 
 <p id="result"></p>
 
 
 </div>
+
+
 
 
 
@@ -542,9 +592,9 @@ love:""
 function nextPage(from,to){
 
 
-let oldPage=document.getElementById("page"+from);
+let oldPage = document.getElementById("page"+from);
 
-let newPage=document.getElementById("page"+to);
+let newPage = document.getElementById("page"+to);
 
 
 
@@ -552,7 +602,7 @@ oldPage.classList.add("close");
 
 
 
-setTimeout(()=>{
+setTimeout(function(){
 
 
 oldPage.classList.add("hidden");
@@ -563,9 +613,7 @@ oldPage.classList.remove("close");
 newPage.classList.remove("hidden");
 
 
-
 },400);
-
 
 
 }
@@ -579,21 +627,20 @@ newPage.classList.remove("hidden");
 function runNo(id){
 
 
-let btn=document.getElementById(id);
+let btn = document.getElementById(id);
 
 
-let x=(Math.random()*220)-110;
+let x = (Math.random()*220)-110;
 
-let y=(Math.random()*80)-40;
+let y = (Math.random()*80)-40;
 
 
 
-btn.style.transform=
-`translate(${x}px,${y}px)`;
+btn.style.transform =
+`translate(${x}px, ${y}px)`;
 
 
 }
-
 
 
 
@@ -604,7 +651,21 @@ btn.style.transform=
 function choosePlace(place){
 
 
-answers.place=place;
+answers.place = place;
+
+
+}
+
+
+
+
+
+
+
+function chooseFood(food){
+
+
+answers.food = food;
 
 
 }
@@ -616,90 +677,13 @@ answers.place=place;
 
 
 function loveAnswer(answer){
+
 
 answers.love = answer;
 
 
-let message = `
-💜 New Date Request 💜
-
-🦄 Love:
-${answers.love}
-
-📍 Place:
-${answers.place}
-
-🍽 Food:
-${answers.food}
-
-📅 Date:
-${document.getElementById("date").value}
-
-⏰ Time:
-${document.getElementById("time").value}
-`;
-
-
-
-fetch("/api/send",{
-
-method:"POST",
-
-headers:{
-"Content-Type":"application/json"
-},
-
-body:JSON.stringify({
-
-message:message
-
-})
-
-});
-
-
 
 document.getElementById("result").innerHTML =
-
-`
-📍 ${answers.place}
-
-<br><br>
-
-🍽 ${answers.food}
-
-<br><br>
-
-🦄 ${answers.love}
-`;
-
-
-
-nextPage(6,7);
-
-}
-
-
-answers.food=food;
-
-
-}
-
-
-
-
-
-
-
-
-function loveAnswer(answer){
-
-
-answers.love=answer;
-
-
-
-document.getElementById("result").innerHTML=
 
 `
 
@@ -720,9 +704,7 @@ document.getElementById("result").innerHTML=
 nextPage(6,7);
 
 
-
 }
-
 
 
 
@@ -732,4 +714,4 @@ nextPage(6,7);
 
 </body>
 
-</html>    
+</html>  
