@@ -615,7 +615,69 @@ answers.place=place;
 
 
 
-function chooseFood(food){
+function loveAnswer(answer){
+
+answers.love = answer;
+
+
+let message = `
+💜 New Date Request 💜
+
+🦄 Love:
+${answers.love}
+
+📍 Place:
+${answers.place}
+
+🍽 Food:
+${answers.food}
+
+📅 Date:
+${document.getElementById("date").value}
+
+⏰ Time:
+${document.getElementById("time").value}
+`;
+
+
+
+fetch("/api/send",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+message:message
+
+})
+
+});
+
+
+
+document.getElementById("result").innerHTML =
+
+`
+📍 ${answers.place}
+
+<br><br>
+
+🍽 ${answers.food}
+
+<br><br>
+
+🦄 ${answers.love}
+`;
+
+
+
+nextPage(6,7);
+
+}
 
 
 answers.food=food;
