@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rawrr🦄</title>
+<title>Rawrrr 🦄💜</title>
 
 <style>
 
 *{
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
+
 body{
-    margin:0;
-    min-height:100vh;
-    background:
-    linear-gradient(135deg,#eee7ff,#d8c8ff,#f3e8ff);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
+
+margin:0;
+min-height:100vh;
+
+background:
+linear-gradient(135deg,#f5edff,#e9d5ff,#ddd6fe);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
+
 }
+
 
 
 .card{
 
-    width:90%;
-    max-width:430px;
-    background:rgba(255,255,255,.85);
-    backdrop-filter:blur(15px);
-    border-radius:35px;
-    padding:35px 25px;
-    text-align:center;
-    box-shadow:0 20px 60px #8b5cf655;
+width:90%;
+max-width:430px;
 
-    animation:open .6s ease;
+background:rgba(255,255,255,.85);
+
+backdrop-filter:blur(15px);
+
+padding:35px 25px;
+
+border-radius:35px;
+
+text-align:center;
+
+box-shadow:0 20px 60px #8b5cf655;
+
+animation:open .6s ease;
+
 }
+
 
 
 @keyframes open{
 
 from{
+
 opacity:0;
-transform:scale(.8) translateY(30px);
+transform:scale(.8);
+
 }
 
 to{
+
 opacity:1;
-transform:scale(1) translateY(0);
+transform:scale(1);
+
 }
 
 }
+
 
 
 .close{
@@ -65,8 +87,10 @@ animation:close .4s forwards;
 @keyframes close{
 
 to{
+
 opacity:0;
 transform:scale(.8);
+
 }
 
 }
@@ -75,7 +99,8 @@ transform:scale(.8);
 
 .unicorn{
 
-font-size:75px;
+font-size:80px;
+
 animation:float 3s infinite ease-in-out;
 
 }
@@ -84,7 +109,9 @@ animation:float 3s infinite ease-in-out;
 @keyframes float{
 
 50%{
-transform:translateY(-12px);
+
+transform:translateY(-15px);
+
 }
 
 }
@@ -94,31 +121,45 @@ transform:translateY(-12px);
 h1{
 
 color:#7c3aed;
-font-size:26px;
+
+font-size:30px;
+
+line-height:1.4;
+
+font-weight:800;
 
 }
 
 
-p{
 
-color:#64748b;
-font-size:17px;
+.main-question{
+
+font-size:30px;
 
 }
+
 
 
 button{
 
-border:none;
+border:0;
+
 padding:14px 35px;
+
 border-radius:50px;
-font-size:17px;
+
+font-size:18px;
+
 font-weight:bold;
+
 cursor:pointer;
+
 margin:10px;
+
 transition:.3s;
 
 }
+
 
 
 button:hover{
@@ -128,18 +169,21 @@ transform:scale(1.08);
 }
 
 
+
 .yes{
 
 background:#f472b6;
+
 color:white;
-box-shadow:0 10px 25px #f472b666;
 
 }
+
 
 
 .no{
 
 background:#f1f5f9;
+
 color:#64748b;
 
 }
@@ -149,8 +193,11 @@ color:#64748b;
 .buttons{
 
 display:flex;
+
 justify-content:center;
+
 position:relative;
+
 height:70px;
 
 }
@@ -160,20 +207,44 @@ height:70px;
 .option{
 
 background:#f5f3ff;
+
 padding:18px;
+
 border-radius:22px;
+
 margin:12px 0;
+
 cursor:pointer;
+
 transition:.3s;
+
 font-size:18px;
 
 }
 
 
+
 .option:hover{
 
-background:#ede9fe;
 transform:translateY(-5px);
+
+background:#ede9fe;
+
+}
+
+
+
+input{
+
+padding:12px;
+
+border-radius:15px;
+
+border:1px solid #ddd;
+
+font-size:16px;
+
+margin:8px;
 
 }
 
@@ -186,31 +257,26 @@ display:none;
 }
 
 
-input{
-
-padding:12px;
-border-radius:15px;
-border:1px solid #ddd;
-margin:8px;
-font-size:16px;
-
-}
-
-
 </style>
+
 </head>
+
 <body>
 <div class="card" id="page1">
 
-<div class="unicorn">🦄</div>
+<div class="unicorn">
+🦄
+</div>
+
 
 <h1>
-Ahmed 🦄
+Rawrrr 🦄💜
 </h1>
 
-<p>
+
+<h1 class="main-question">
 Yasmin, will you go on a date with me? 💜
-</p>
+</h1>
 
 
 <div class="buttons">
@@ -219,75 +285,77 @@ Yasmin, will you go on a date with me? 💜
 YES 💖
 </button>
 
+
 <button class="no" id="no1" onmouseover="runNo('no1')">
 NO 😈
 </button>
 
 </div>
 
+
 </div>
+
+
 
 
 
 <div class="card hidden" id="page2">
 
-<div class="unicorn">🦄✨</div>
+
+<div class="unicorn">
+🦄✨
+</div>
+
 
 <h1>
 WAIT YOU ACTUALLY SAID YES?? 😭💜
 </h1>
 
+
 <p>
-Choose our date
+I knew you would say yes 🥹
 </p>
 
-<input type="date" id="date">
-
-<br>
-
-<input type="time" id="time">
-
-
-<br>
 
 <button class="yes" onclick="nextPage(2,3)">
-Next 💜
+OKAY 💜
 </button>
 
+
 </div>
+
 
 
 
 
 <div class="card hidden" id="page3">
 
+
 <div class="unicorn">
-📍
+📅✨
 </div>
 
+
 <h1>
-Where should we go?
+Choose our date 💜
 </h1>
 
 
-<div class="option" onclick="choosePlace('Maadi')">
-📍 Maadi
-</div>
+<p>
+Pick the day and time
+</p>
 
 
-<div class="option" onclick="choosePlace('Downtown')">
-🏙️ Downtown
-</div>
+<input type="date" id="date">
 
 
-<div class="option" onclick="choosePlace('Zamalek')">
-🌴 Zamalek
-</div>
+<br>
 
 
-<div class="option" onclick="choosePlace('Cinema')">
-🎬 Cinema
-</div>
+<input type="time" id="time">
+
+
+<br>
 
 
 <button class="yes" onclick="nextPage(3,4)">
@@ -298,50 +366,45 @@ Next 💜
 </div>
 <div class="card hidden" id="page4">
 
+
 <div class="unicorn">
-🍽️
+📍✨
 </div>
 
+
 <h1>
-What are we eating? ✨
+Where should we go? 💜
 </h1>
 
 
-<div class="option" onclick="chooseFood('Pizza')">
-🍕 Pizza
+<div class="option" onclick="choosePlace('Maadi 📍')">
+📍 Maadi
 </div>
 
 
-<div class="option" onclick="chooseFood('Sushi')">
-🍣 Sushi
+<div class="option" onclick="choosePlace('Downtown 🏙️')">
+🏙️ Downtown
 </div>
 
 
-<div class="option" onclick="chooseFood('Burger')">
-🍔 Burger
+<div class="option" onclick="choosePlace('Zamalek 🌴')">
+🌴 Zamalek
 </div>
 
 
-<div class="option" onclick="chooseFood('Chicken')">
-🍗 Chicken
+<div class="option" onclick="choosePlace('Cinema 🎬')">
+🎬 Cinema
 </div>
 
-
-<div class="option" onclick="chooseFood('Shawarma')">
-🥙 Shawarma
-</div>
-
-
-<div class="option" onclick="chooseFood('Kofta')">
-🥩 Kofta
-</div>
 
 
 <button class="yes" onclick="nextPage(4,5)">
 Next 💜
 </button>
 
+
 </div>
+
 
 
 
@@ -350,29 +413,50 @@ Next 💜
 
 
 <div class="unicorn">
-🦄💜
+🍽️✨
 </div>
 
 
 <h1>
-Do you love Ahmed? 🦄
+What are we eating? 💜
 </h1>
 
 
-<div class="buttons">
 
-
-<button class="yes" onclick="loveAnswer('Rawrr 🦖💜')">
-Rawrr 🦖
-</button>
-
-
-<button class="no" id="no2" onmouseover="runNo('no2')">
-No 😈
-</button>
-
-
+<div class="option" onclick="chooseFood('Pizza 🍕')">
+🍕 Pizza
 </div>
+
+
+<div class="option" onclick="chooseFood('Sushi 🍣')">
+🍣 Sushi
+</div>
+
+
+<div class="option" onclick="chooseFood('Burger 🍔')">
+🍔 Burger
+</div>
+
+
+<div class="option" onclick="chooseFood('Chicken 🍗')">
+🍗 Chicken
+</div>
+
+
+<div class="option" onclick="chooseFood('Shawarma 🥙')">
+🥙 Shawarma
+</div>
+
+
+<div class="option" onclick="chooseFood('Kofta 🥩')">
+🥩 Kofta
+</div>
+
+
+
+<button class="yes" onclick="nextPage(5,6)">
+Next 💜
+</button>
 
 
 </div>
@@ -382,6 +466,40 @@ No 😈
 
 
 <div class="card hidden" id="page6">
+
+
+<div class="unicorn">
+🦄💜
+</div>
+
+
+
+<h1>
+Do you love Ahmed? 🦄
+</h1>
+
+
+
+<div class="buttons">
+
+
+<button class="yes" onclick="loveAnswer('Rawrrr 🦖💜')">
+Rawrrr 🦖
+</button>
+
+
+
+<button class="no" id="no2" onmouseover="runNo('no2')">
+No 😈
+</button>
+
+
+
+</div>
+
+
+</div>
+<div class="card hidden" id="page7">
 
 
 <div class="unicorn">
@@ -399,100 +517,157 @@ Can't wait to see you Yasmin ✨
 </p>
 
 
-<p id="result">
-</p>
+<p id="result"></p>
 
 
 </div>
+
+
+
 <script>
 
+
 let answers = {
-    place:"",
-    food:"",
-    love:"",
+
+place:"",
+food:"",
+love:""
+
 };
+
+
+
 
 
 function nextPage(from,to){
 
-    let oldPage = document.getElementById("page"+from);
-    let newPage = document.getElementById("page"+to);
+
+let oldPage=document.getElementById("page"+from);
+
+let newPage=document.getElementById("page"+to);
 
 
-    oldPage.classList.add("close");
+
+oldPage.classList.add("close");
 
 
-    setTimeout(()=>{
 
-        oldPage.classList.add("hidden");
-        oldPage.classList.remove("close");
+setTimeout(()=>{
 
 
-        newPage.classList.remove("hidden");
+oldPage.classList.add("hidden");
+
+oldPage.classList.remove("close");
 
 
-    },400);
+newPage.classList.remove("hidden");
+
+
+
+},400);
+
+
 
 }
+
+
+
 
 
 
 
 function runNo(id){
 
-    let btn=document.getElementById(id);
 
-    let x=(Math.random()*220)-110;
-    let y=(Math.random()*80)-40;
+let btn=document.getElementById(id);
 
 
-    btn.style.transform=
-    `translate(${x}px,${y}px)`;
+let x=(Math.random()*220)-110;
+
+let y=(Math.random()*80)-40;
+
+
+
+btn.style.transform=
+`translate(${x}px,${y}px)`;
+
 
 }
+
+
+
+
 
 
 
 
 function choosePlace(place){
 
-    answers.place=place;
+
+answers.place=place;
+
 
 }
+
+
+
+
 
 
 
 function chooseFood(food){
 
-    answers.food=food;
+
+answers.food=food;
+
 
 }
+
+
+
+
 
 
 
 
 function loveAnswer(answer){
 
-    answers.love=answer;
+
+answers.love=answer;
 
 
-    document.getElementById("result").innerHTML=
-    `
-    📍 ${answers.place}<br><br>
 
-    🍽️ ${answers.food}<br><br>
+document.getElementById("result").innerHTML=
 
-    🦄 ${answers.love}
-    `;
+`
+
+📍 ${answers.place}
+
+<br><br>
+
+🍽️ ${answers.food}
+
+<br><br>
+
+🦄 ${answers.love}
+
+`;
 
 
-    nextPage(5,6);
+
+nextPage(6,7);
+
+
 
 }
+
+
 
 
 </script>
 
 
+
 </body>
+
 </html>    
